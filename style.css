@@ -41,7 +41,7 @@ body {
   z-index: 2;
   display: flex;
   flex-direction: row;
-  justify-content: center
+  justify-content: center;
 }
 
 .logo_text {
@@ -51,7 +51,6 @@ body {
 .title {
   position: relative;
   z-index: 2;
-  display: block;
   text-align: center;
   width: 100%;
 }
@@ -59,17 +58,15 @@ body {
 .header-title {
   text-transform: uppercase;
   color: #ffffff;
-  font-weight: bold;
   margin-bottom: 0;
-  
 }
 
 .title-one {
   display: block;
-}
-
-.title-two {
-  display: block;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 0;
+  font-weight: bold;
 }
 
 .buttons {
@@ -133,7 +130,6 @@ a {
 .list {
   padding: 0;
   margin: 0;
-  list-style-type: none;
 }
 
 
@@ -146,7 +142,6 @@ a {
 .header-athlets {
   text-transform: uppercase;
   color: #e7e7e7;
-  font-weight: bold;
 }
 
 .heading {
@@ -193,7 +188,6 @@ a {
   flex-wrap: wrap;
 }
 
-
 .numbers {
   font-weight: bold;
   margin-right: 13px;
@@ -228,7 +222,6 @@ a {
   color: #e7e7e7;
 }
 
-
 .head {
   display: flex;
 }
@@ -252,13 +245,18 @@ a {
 .be-active {
   display: flex;
   flex-wrap: wrap;
+}
+
+.active-img {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
   position: relative;
 }
 
 .square {
   position: absolute;
   display: flex;
-  flex-direction: row;
 }
 
 .figure {
@@ -273,16 +271,28 @@ a {
   border-radius: 5px;
 }
 
-.active-img {
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-}
-
 .active-card-img {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  position: relative;
+}
+
+.find-square {
+  position: absolute;
+  display: flex;
+}
+
+.find-figure {
+  font-weight: bold;
+  margin: auto;
+}
+
+.find-figure::after {
+  content: "";
+  display: block;
+  background: #8f7bc8;
+  border-radius: 5px;
 }
 
 .header-active {
@@ -306,6 +316,7 @@ a {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  position: relative;
 }
 
 .work-it {
@@ -347,7 +358,6 @@ a {
 .logo-footer {
   display: flex;
   width: 100%;
-  flex-direction: row;
   justify-content: center;
 }
 
@@ -410,7 +420,6 @@ a {
 	.header {
     padding-top: 40px;
     padding-bottom: 82px;
-    max-width: 640px;
     background-image: url("images/football_767.jpg");
     padding-top: 40px;
 	}
@@ -426,14 +435,13 @@ a {
   .header-title {
     margin-top: 136px;
     font-size: 28px;
-  }
-
-  .title-one {
     text-align: left;
   }
 
-  .title-two {
-    padding-left: 13%;
+  .title-one {
+    font-size: 28px;
+    text-align: left;
+    padding-left: 43px;
   }
 
   .buttons {
@@ -446,8 +454,8 @@ a {
     width: 280px;
     background-color: #5e42b0;
     font-size: 8px;
-    flex-direction: row;
-    justify-content: center;
+    box-sizing: border-box;
+    padding-left: 90px;
   }
 
   .button:last-child {
@@ -467,26 +475,22 @@ a {
     max-width: 640px;
   }
 
-
   .img {
     top: 9%;
     left: 15%;
   }
 
-
-  .athlets-part {
+  .athlets-title {
     width: 100%;
   }
 
-
   .athlets-one {
     background-color: #fafafa;
-    padding-left: 5.6%;
+    padding-left: 20px;
     padding-right: 5.6%;
     padding-bottom: 55px;
   }
 
- 
   .athlets-one-part2 {
     width: 90%;
   }
@@ -512,7 +516,6 @@ a {
     font-size: 14px;
   }
 
-
   .heading-header {
     font-size: 23px;
     margin: 0;
@@ -526,7 +529,7 @@ a {
   .athlets-two {
     background-color: #f5f4f9;
     padding-bottom: 55px;
-    padding-left: 5.6%;
+    padding-left: 20px;
     padding-right: 5.6%;
   }
 
@@ -536,7 +539,7 @@ a {
 
   .athlets-three {
     padding-bottom: 55px;
-    padding-left: 5.6%;
+    padding-left: 20px;
     padding-right: 5.6%;
   }
 
@@ -565,7 +568,7 @@ a {
   }
 
   .players-one {
-    padding-left: 4%;
+    padding-left: 20px;
     padding-bottom: 35px;
     background-color: #fafafa;
     padding-top: 60px;
@@ -577,7 +580,7 @@ a {
 
   .players-two {
     background-color: #f5f4f9;
-    padding-left: 4%;
+    padding-left: 20px;
     padding-bottom: 50px;
   }
 
@@ -588,7 +591,7 @@ a {
 
   .players-three {
     background-color: #090c35;
-    padding-left: 4%;
+    padding-left: 20px;
     padding-bottom: 58px;
   }
 
@@ -599,6 +602,13 @@ a {
   .be-active {
     width: 100%;
     margin-bottom: 90px;
+  }
+
+  
+  .active-img {
+    width: 100%;
+    height: 350px;
+    background-image: url("images/be-active_640.jpg");
   }
 
   .square {
@@ -620,16 +630,29 @@ a {
     height: 5px;
   }
 
-  .active-img {
-    width: 100%;
-    height: 350px;
-    background-image: url("images/be-active_640.jpg");
-  }
-
   .active-card-img {
     width: 100%;
     height: 350px;
     background-image: url("images/find-contact_640.jpg");
+  }
+
+  .find-square {
+    width: 70px;
+    height: 70px;
+    background-color: #5e42b0;
+    top: 289px;
+    left: 4%;
+  }
+
+  .find-figure {
+    font-size: 18px;
+    color: #ffffff;
+  }
+
+  .find-figure::after {
+    content: "";
+    width: 20px;
+    height: 5px;
   }
 
   .active-card {
@@ -707,8 +730,6 @@ a {
 @media (min-width: 641px) and (max-width: 960px) {
 	.header {
     padding-bottom: 82px;
-    min-width: 641px;
-    max-width: 960px;
     background-image: url("images/football_1280.jpg");
     padding-top: 40px;
 	}
@@ -724,16 +745,14 @@ a {
   .header-title {
     margin-top: 180px;
     font-size: 64px;
+    text-align: left;
+    padding-left: 70px;
   }
 
   .title-one {
+    font-size: 64px;
     text-align: left;
-    padding-left: 6.5%;
-  }
-
-  .title-two {
-    text-align: left;
-    padding-left: 20%;
+    padding-left: 168px;
   }
 
   .buttons {
@@ -772,7 +791,7 @@ a {
     left: -20%;
   }
 
-  .athlets-part {
+  .athlets-title {
     display: flex;
     box-sizing: border-box;
     padding-top: 80px;
@@ -869,7 +888,7 @@ a {
   }
 
   .players-one {
-    padding-left: 4%;
+    padding-left: 23px;
     padding-bottom: 35px;
   }
 
@@ -879,7 +898,7 @@ a {
 
   .players-two {
     background-color: #f5f6f7;
-    padding-left: 4%;
+    padding-left: 23px;
     padding-bottom: 50px;
   }
 
@@ -890,7 +909,7 @@ a {
 
   .players-three {
     background-color: #0a0e34;
-    padding-left: 4%;
+    padding-left: 23px;
     padding-bottom: 58px;
   }
 
@@ -901,6 +920,12 @@ a {
   .be-active {
     width: 100%;
     margin-bottom: 95px;
+  }
+
+  .active-img {
+    width: 100%;
+    height: 585px;
+    background-image: url("images/be-active_960.jpg");
   }
 
   .square {
@@ -922,16 +947,29 @@ a {
     height: 5px;
   }
 
-  .active-img {
-    width: 100%;
-    height: 585px;
-    background-image: url("images/be-active_960.jpg");
-  }
-
   .active-card-img {
     width: 100%;
     height: 585px;
     background-image: url("images/find-contact_960.jpg");
+  }
+
+  .find-square {
+    width: 115px;
+    height: 115px;
+    background-color: #5e42b0;
+    top: 488px;
+    left: 4%;
+  }
+
+  .find-figure {
+    font-size: 24px;
+    color: #ffffff;
+  }
+
+  .find-figure::after {
+    content: "";
+    width: 23px;
+    height: 5px;
   }
 
   .active-card {
@@ -1010,8 +1048,6 @@ a {
   .header {
     padding-top: 46px;
     padding-bottom: 109px;
-    min-width: 961px;
-    max-width: 1920px;
     background-image: url("images/football_1920.jpg");
 	}
 
@@ -1026,13 +1062,11 @@ a {
   .header-title {
     margin-top: 297px;
     font-size: 90px;
-  }
-
-  .title-one {
     text-align: left;
   }
 
-  .title-two {
+  .title-one {
+    font-size: 90px;
     text-align: right;
   }
 
@@ -1069,28 +1103,22 @@ a {
 
   .img {
     top: 25px;
-    left: 15%;
+    right: 50%;
   }
 
-  .athlets-part {
+  .athlets-title {
     display: flex;
     box-sizing: border-box;
     padding-top: 100px;
-    flex-direction: row;
-    justify-content: flex-end;
-    width: 74%;
+    padding-left: 815px;
   }
 
- 
   .athlets-one {
     padding-bottom: 60px;
-    flex-direction: row;
-    justify-content: flex-end;
   }
 
-  
   .athlets-one-part2 {
-    width: 44%;
+    padding-left: 815px;
     padding-top: 30px;
   }
 
@@ -1125,22 +1153,18 @@ a {
   .athlets-two {
     background-color: #f6f4fa;
     padding-bottom: 59px;
-    flex-direction: row;
-    justify-content: flex-end;
   }
 
   .athlets-two-part2 {
-    width: 44%;
+    padding-left: 815px;
   }
 
   .athlets-three {
     padding-bottom: 59px;
-    flex-direction: row;
-    justify-content: flex-end;
   }
 
   .athlets-tree-part2 {
-    width: 44%;
+    padding-left: 815px;
   }
 
   .numbers {
@@ -1153,28 +1177,28 @@ a {
 
   .image {
     top: -60px;
-    right: -5%; 
+    left: 35%; 
   }
 
   .header-players {
     font-size: 80px;
     margin-top: 70px;
     margin-bottom: 25px;
-    padding-left: 0.7%;
+    padding-left: 15px;
   }
 
   .players-one {
-    padding-left: 0.7%;
+    padding-left: 15px;
     padding-bottom: 65px;
   }
 
   .players-one-part1 {
-    width: 46%;
+    width: 48%;
   }
 
   .players-two {
     background-color: #f5f6f7;
-    padding-left: 0.7%;
+    padding-left: 15px;
     padding-bottom: 70px;
   }
 
@@ -1185,7 +1209,7 @@ a {
 
   .players-three {
     background-color: #0a0e34;
-    padding-left: 0.7%;
+    padding-left: 15px;
     padding-bottom: 58px;
   }
 
@@ -1197,12 +1221,18 @@ a {
     width: 100%;
   }
 
+  .active-img {
+    width: 50%;
+    height: 730px;
+    background-image: url("images/be-active_1024.jpg");
+  }
+
   .square {
     width: 168px;
     height: 154px;
     background-color: #5e42b0;
     top: 28%;
-    left: 45.5%;
+    left: 86.5%;
   }
 
   .figure {
@@ -1216,17 +1246,30 @@ a {
     height: 5px;
   }
 
-  .active-img {
-    width: 50%;
-    height: 730px;
-    background-image: url("images/be-active_1024.jpg");
-  }
-
   .active-card-img {
     width: 50%;
     height: 730px;
     background-image: url("images/find-contact_1024.jpg");
     order: 2;
+  }
+
+  .find-square {
+    width: 168px;
+    height: 154px;
+    background-color: #5e42b0;
+    top: 28%;
+    right: 86%;
+  }
+
+  .find-figure {
+    font-size: 24px;
+    color: #ffffff;
+  }
+
+  .find-figure::after {
+    content: "";
+    width: 27px;
+    height: 5px;
   }
 
   .active-card {
@@ -1309,10 +1352,10 @@ a {
 
 @media (min-width: 1921px) {
 
-	.container {
-	  margin-right: auto;
-    margin-left: auto;
-	}
+ .container {
+   margin-right: auto;
+   margin-left: auto;
+ }
 
   .main {
     margin-right: auto;
