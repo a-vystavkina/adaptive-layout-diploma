@@ -51,7 +51,6 @@ body {
 .title {
   position: relative;
   z-index: 2;
-  text-align: center;
   width: 100%;
 }
 
@@ -84,7 +83,9 @@ a {
   border: 1px solid #5e42b0;
   border-radius: 35px;
   display: flex;
+  flex-direction: row;
   align-items: center;
+  vertical-align: middle;
 }
 
 .button:hover {
@@ -93,24 +94,24 @@ a {
   border-radius: 35px;
 }
 
+.button-text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 .svg {
   fill: #ffffff;
 }
 
-.text {
+.text-app {
   text-transform: uppercase;
   color: #ffffff;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
 }
 
-.text_button_one {
-  font-weight: normal;
-}
-
-.text_button_two {
-  font-weight: bold;
+.text-google {
+  text-transform: uppercase;
+  color: #ffffff;
 }
 
 .athlets {
@@ -146,10 +147,14 @@ a {
 
 .heading {
   display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .headings {
   display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .number {
@@ -224,6 +229,8 @@ a {
 
 .head {
   display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .numb {
@@ -304,6 +311,17 @@ a {
 .active-text {
   font-weight: normal;
   color: #000000;
+}
+
+.find-text {
+  font-weight: normal;
+  color: #000000;
+}
+
+.header-find {
+  text-transform: uppercase;
+  color: #e7e7e7;
+  font-weight: bold;
 }
 
 .find-contact {
@@ -467,7 +485,15 @@ a {
     height: 22px;
   }
 
-  .text {
+  .text-app {
+    box-sizing: border-box;
+    width: 90px;
+    padding-left: 10px;
+  }
+
+  .text-google {
+    box-sizing: border-box;
+    width: 70px;
     padding-left: 10px;
   }
 
@@ -681,6 +707,19 @@ a {
     margin-bottom: 90px;
   }
 
+  .header-find {
+    font-size: 28px;
+    margin-top: 35px;
+    margin-left: 4%;
+    margin-bottom: 22px;
+  }
+
+  .find-text {
+    font-size: 16px;
+    margin-left: 4%;
+    width: 80%;
+  }
+
   .card-img {
     width: 100%;
     height: 350px;
@@ -777,9 +816,18 @@ a {
     padding-left: 30px;
   }
 
-  .text {
-    padding-left: 20px;
+  .text-app {
+    box-sizing: border-box;
+    width: 170px;
+    padding-left: 25px;
   }
+
+  .text-google {
+    box-sizing: border-box;
+    width: 140px;
+    padding-left: 25px;
+  }
+
 
   .main {
     max-width: 960px;
@@ -998,6 +1046,19 @@ a {
     margin-bottom: 95px;
   }
 
+  .header-find {
+    font-size: 80px;
+    margin-top: 90px;
+    margin-left: 4%;
+    margin-bottom: 40px;
+  }
+
+  .find-text {
+    font-size: 24px;
+    margin-left: 4%;
+    width: 62%;
+  }
+
   .card-img {
     width: 100%;
     height: 585px;
@@ -1092,13 +1153,23 @@ a {
     padding-left: 39px;
   }
 
-  .text {
-    padding-left: 21px;
+  .text-app {
+    box-sizing: border-box;
+    width: 160px;
+    padding-left: 15px;
+  }
+
+  .text-google {
+    box-sizing: border-box;
+    width: 116px;
+    padding-left: 15px;
   }
 
   .main {
     max-width: 1920px;
     min-width: 961px;
+    box-sizing: border-box;
+    padding-right: 200px;
   }
 
   .img {
@@ -1110,7 +1181,7 @@ a {
     display: flex;
     box-sizing: border-box;
     padding-top: 100px;
-    padding-left: 815px;
+    padding-left: 53vw;
   }
 
   .athlets-one {
@@ -1118,7 +1189,7 @@ a {
   }
 
   .athlets-one-part2 {
-    padding-left: 815px;
+    padding-left: 53vw;
     padding-top: 30px;
   }
 
@@ -1156,7 +1227,7 @@ a {
   }
 
   .athlets-two-part2 {
-    padding-left: 815px;
+    padding-left: 53vw;
   }
 
   .athlets-three {
@@ -1164,7 +1235,7 @@ a {
   }
 
   .athlets-tree-part2 {
-    padding-left: 815px;
+    padding-left: 53vw;
   }
 
   .numbers {
@@ -1228,11 +1299,11 @@ a {
   }
 
   .square {
-    width: 168px;
+    width: 165px;
     height: 154px;
     background-color: #5e42b0;
     top: 28%;
-    left: 86.5%;
+    left: 91%;
   }
 
   .figure {
@@ -1254,11 +1325,11 @@ a {
   }
 
   .find-square {
-    width: 168px;
+    width: 165px;
     height: 154px;
     background-color: #5e42b0;
     top: 28%;
-    right: 86%;
+    right: 91%;
   }
 
   .find-figure {
@@ -1283,18 +1354,31 @@ a {
   .header-active {
     font-size: 80px;
     margin-top: 263px;
-    margin-left: 10%;
+    margin-left: 128px;
     margin-bottom: 80px;
   }
 
   .active-text {
     font-size: 24px;
-    margin-left: 10%;
+    margin-left: 128px;
     width: 61.5%;
+  }
+
+  .find-text {
+    font-size: 24px;
+    margin-left: 15px;
+    width: 80%;
   }
 
   .find-contact {
     width: 100%;
+  }
+
+  .header-find {
+    font-size: 80px;
+    margin-top: 263px;
+    margin-left: 15px;
+    margin-bottom: 80px;
   }
 
   .card-img {
@@ -1351,7 +1435,6 @@ a {
 }
 
 @media (min-width: 1921px) {
-
  .container {
    margin-right: auto;
    margin-left: auto;
