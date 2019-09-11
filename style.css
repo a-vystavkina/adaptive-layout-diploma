@@ -1303,7 +1303,8 @@ a {
     height: 154px;
     background-color: #5e42b0;
     top: 28%;
-    left: 91%;
+    right: 0;
+    transform: translateX(50%);
   }
 
   .figure {
@@ -1329,7 +1330,8 @@ a {
     height: 154px;
     background-color: #5e42b0;
     top: 28%;
-    right: 91%;
+    left: 0;
+    transform: translateX(-50%)
   }
 
   .find-figure {
