@@ -139,7 +139,6 @@ a {
   flex-wrap: wrap;
 }
 
-
 .header-athlets {
   text-transform: uppercase;
   color: #e7e7e7;
@@ -248,7 +247,6 @@ a {
   border-radius: 5px;
 }
 
-
 .be-active {
   display: flex;
   flex-wrap: wrap;
@@ -311,11 +309,14 @@ a {
 .active-text {
   font-weight: normal;
   color: #000000;
+  display: block;
 }
 
-.find-text {
-  font-weight: normal;
-  color: #000000;
+
+.find-contact {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
 }
 
 .header-find {
@@ -324,10 +325,9 @@ a {
   font-weight: bold;
 }
 
-.find-contact {
-  display: flex;
-  flex-wrap: wrap;
-  position: relative;
+.find-text {
+  font-weight: normal;
+  color: #000000;
 }
 
 .card-img {
@@ -685,9 +685,6 @@ a {
     width: 100%;
   }
 
-  .active-card-find {
-    width: 100%;
-  }
 
   .header-active {
     font-size: 28px;
@@ -1024,10 +1021,6 @@ a {
     width: 100%;
   }
 
-  .active-card-find {
-    width: 100%;
-  }
-
   .header-active {
     font-size: 80px;
     margin-top: 90px;
@@ -1174,14 +1167,14 @@ a {
 
   .img {
     top: 25px;
-    right: 50%;
+    right: 47%;
   }
 
   .athlets-title {
     display: flex;
     box-sizing: border-box;
     padding-top: 100px;
-    padding-left: 53vw;
+    padding-left: 56vw;
   }
 
   .athlets-one {
@@ -1189,7 +1182,7 @@ a {
   }
 
   .athlets-one-part2 {
-    padding-left: 53vw;
+    padding-left: 56vw;
     padding-top: 30px;
   }
 
@@ -1227,7 +1220,7 @@ a {
   }
 
   .athlets-two-part2 {
-    padding-left: 53vw;
+    padding-left: 56vw;
   }
 
   .athlets-three {
@@ -1235,7 +1228,7 @@ a {
   }
 
   .athlets-tree-part2 {
-    padding-left: 53vw;
+    padding-left: 56vw;
   }
 
   .numbers {
@@ -1248,18 +1241,18 @@ a {
 
   .image {
     top: -60px;
-    left: 35%; 
+    left: 38%; 
   }
 
   .header-players {
     font-size: 80px;
     margin-top: 70px;
     margin-bottom: 25px;
-    padding-left: 15px;
+    padding-left: 2%;
   }
 
   .players-one {
-    padding-left: 15px;
+    padding-left: 2%;
     padding-bottom: 65px;
   }
 
@@ -1269,7 +1262,7 @@ a {
 
   .players-two {
     background-color: #f5f6f7;
-    padding-left: 15px;
+    padding-left: 2%;
     padding-bottom: 70px;
   }
 
@@ -1280,7 +1273,7 @@ a {
 
   .players-three {
     background-color: #0a0e34;
-    padding-left: 15px;
+    padding-left: 2%;
     padding-bottom: 58px;
   }
 
@@ -1294,7 +1287,6 @@ a {
 
   .active-img {
     width: 50%;
-    height: 730px;
     background-image: url("images/be-active_1024.jpg");
   }
 
@@ -1320,7 +1312,6 @@ a {
 
   .active-card-img {
     width: 50%;
-    height: 730px;
     background-image: url("images/find-contact_1024.jpg");
     order: 2;
   }
@@ -1347,15 +1338,13 @@ a {
 
   .active-card {
     width: 50%;
-  }
-
-  .active-card-find {
-    width: 50%;
+    box-sizing: border-box;
+    padding-bottom: 280px;
   }
 
   .header-active {
     font-size: 80px;
-    margin-top: 263px;
+    margin-top: 260px;
     margin-left: 128px;
     margin-bottom: 80px;
   }
@@ -1363,14 +1352,9 @@ a {
   .active-text {
     font-size: 24px;
     margin-left: 128px;
-    width: 61.5%;
+    width: 77%;
   }
 
-  .find-text {
-    font-size: 24px;
-    margin-left: 15px;
-    width: 80%;
-  }
 
   .find-contact {
     width: 100%;
@@ -1379,13 +1363,18 @@ a {
   .header-find {
     font-size: 80px;
     margin-top: 263px;
-    margin-left: 15px;
-    margin-bottom: 80px;
+    margin-left: 2%;
+    margin-bottom: 75px;
+  }
+
+  .find-text {
+    font-size: 24px;
+    margin-left: 2%;
+    width: 77%;
   }
 
   .card-img {
     width: 50%;
-    height: 730px;
     background-image: url("images/work-it_1024.jpg");
   }
 
